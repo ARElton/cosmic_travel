@@ -1,6 +1,7 @@
 <h1>Such a cool Scientist</h1>
 
 <h2><%= @scientist.name %></h2>
+<p>Field of study: <%= @scientist.field_of_study %></p>
 
 <h2>Check out their missions!!</h2>
 
@@ -10,3 +11,5 @@
   <li>Mission name: <%= mission.name %></li>
   </ul>
 <% end %>
+
+<%= button_to "RUSH, KILL, DESTROY", scientist_path(@scientist), method: :delete %>
