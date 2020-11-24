@@ -1,0 +1,5 @@
+<h1>Our cool Scientists!</h1>
+
+<% @scientists.each do |scientist| %>
+  <p> <%= link_to scientist.name, scientist_path(scientist) %> </p>
+<% end %>

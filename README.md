@@ -8,19 +8,19 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
 
 #  Scientist --< Mission >-- Planet 
 
-- Once you are confident in your domain sketch, build out the models and migrations for your database. 
+<!-- - Once you are confident in your domain sketch, build out the models and migrations for your database. 
     - Your Scientist model should have a **name (string)** and **field_of_study (string)**.  
     - Your Mission model should have a **name (string)**.  
-    - You will also need to include **foreign keys** on the appropiate models.  
+    - You will also need to include **foreign keys** on the appropiate models.   -->
 
 - Test your models are set up correctly by running `rails db:seed` (hint: make sure you set up the relationships on your models!)
 
 - Build the following features on your website:
 
-    - A user should be able to see a list of all scientists
+    <!-- - A user should be able to see a list of all scientists -->
      
 
-    - Clicking on a scientist should take you to a detail page about the scientist. This detail page should list all the planets they have visited and the name of the mission that took them there.
+    <!-- - Clicking on a scientist should take you to a detail page about the scientist. This detail page should list all the planets they have visited and the name of the mission that took them there. -->
 
     - A user should be able to create a new scientist.
         - Scientists must have a name and a field of study

@@ -1,0 +1,12 @@
+<h1>Such a cool Scientist</h1>
+
+<h2><%= @scientist.name %></h2>
+
+<h2>Check out their missions!!</h2>
+
+<% @scientist.missions.each do |mission|%>
+  <ul>
+  <li>Planet: <%= mission.planet.name %></li>
+  <li>Mission name: <%= mission.name %></li>
+  </ul>
+<% end %>
