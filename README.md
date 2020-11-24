@@ -6,6 +6,8 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
 
 - **Sketch out the domain** of the models of Planet, Scientist and Mission.  Think about what foreign keys should go on which models.  What are the relationships between the three?
 
+#  Scientist --< Mission >-- Planet 
+
 - Once you are confident in your domain sketch, build out the models and migrations for your database. 
     - Your Scientist model should have a **name (string)** and **field_of_study (string)**.  
     - Your Mission model should have a **name (string)**.  
@@ -16,6 +18,7 @@ It is the year 2100 and you run an interplanetary space travel agency.  You are 
 - Build the following features on your website:
 
     - A user should be able to see a list of all scientists
+     
 
     - Clicking on a scientist should take you to a detail page about the scientist. This detail page should list all the planets they have visited and the name of the mission that took them there.
 
