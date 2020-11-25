@@ -1,0 +1,25 @@
+<h1>New Mission Time!</h1>
+
+<% if flash[:mission_errors] %>
+  <ul>
+  <% flash[:mission_errors].each do |error| %>
+  <li><%= error %></li>
+  </ul>
+  <% end %>
+<% end %>
+
+<%= form_for @mission do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <br>
+  <%= f.label :scientist_id %>
+  <%= f.collection_select :scientist_id, @scientists, :id, :name %>
+  <br>
+  <br>
+  <%= f.label :planet_id %>
+  <%= f.collection_select :planet_id, @planets, :id, :name %>
+  <br>
+  <br>
+  <%= f.submit %>
+<% end %>
